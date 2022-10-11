@@ -1,0 +1,10 @@
+<div class="container-images">
+    {{#each images}}
+        <div class="container-img">
+            <div class="div-hover"></div>
+                <h5 class="image-title">{{title}}</h5>
+                <a href="/image/{{_id}}" class="image-btnPerfil">Ver</a>
+            <img src="{{imageURL}}" alt="">  
+        </div>
+    {{/each}}
+</div>

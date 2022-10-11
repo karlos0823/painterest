@@ -1,0 +1,18 @@
+
+<div class="container-profileImage">
+    <div class="image-profileImage">
+        <img src="{{image.imageURL}}" alt="">
+    </div>
+    <div class="image-contenido">
+        <p><span>Creado:</span> {{tiempo}}</p>
+        <h2> {{image.title}} </h5>
+        <div class="image-textDescripcion">
+            <p> {{image.description}}</p>
+        </div>
+        <div class="image-opciones">
+            <a href="/image/{{image._id}}/delete" class="image-btnDelete"> 
+                Eliminar
+            </a>
+        </div>
+    </div>
+</div>

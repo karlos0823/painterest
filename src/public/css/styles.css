@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+:root{
+    /* Colores */
+    --color-body: #E2E2E2;
+    --color-primary: #EEC315;
+    --color-secondary: #252525;
+    --color-tertiary: #282C2F;
+
+    /* Fonts */
+    --font-bold:900;
+    --font-semiBold:700;
+    --font-regular:400;
+    --font-light:300;
+
+    /*Font size*/
+    --font-titlePrincipal: 4rem;;
+
+    /*Bordes - color*/
+    --border-color: #474242;
+    --border-radius: 10px;
+
+}
+
+body{
+    background: var(--color-body);
+}
+
+nav{
+    width: 100%;
+    background: var(--color-secondary);
+}
+
+.container-general{
+    width: 100%;
+    max-width: 2000px;
+}
+
+/************************
+ *  ESTILOS NAVEGACIÓN  *
+ ************************/
+
+.container-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: var(--color-secondary);
+    width: 90%;
+    padding: 0.5rem 0;
+    margin: auto;
+}
+
+.container-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.container-nav li{
+    list-style: none;
+}
+
+.container-nav a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    color: var(--color-body);
+    font-weight: var(--font-light)
+}
+
+.container-nav ul a:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.container-nav h1{
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+}
+
+/************************
+ * ESTILOS PÁGINA INDEX *
+ ************************/
+
+ .container-index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    width: 90%;
+    height: 90vh;
+ }
+
+.container-index .index-contenido{
+    width: 40%;
+    margin: auto;
+}
+
+.container-index .index-img{
+    width: 40%;
+    margin: auto;
+}
+
+.container-index .index-img img{
+    width: 100%;
+}
+
+ .container-index h1{
+    font-weight: var(--font-light);
+    font-size: var(--font-titlePrincipal);
+    margin-bottom: 1rem;
+    color: var(--color-tertiary);
+ }
+
+ .container-index p {
+    font-size: 1.5rem;
+    font-weight: var(--font-light);
+    margin: 1rem 0;
+    color: var(--color-tertiary);
+ }
+
+ /**************************
+ * ESTILOS LISTAR IMAGENES *
+ ***************************/
+
+ .container-images{
+    width: 90%;
+    padding: 4rem 0;
+    margin: auto;
+    columns: 5 320px;
+    column-gap: 1rem;
+ }
+
+.container-images .container-img {
+    border-radius: var(--border-radius);
+    position: relative;
+ }
+
+ .container-images .container-img img{
+    width: 100%;
+    border-radius: var(--border-radius);
+ }
+
+.container-images .div-hover{
+    display: none;
+    background: var(--border-color);
+    opacity: 40%;
+    width: 100%;
+    height: 99.5%;
+    position: absolute;
+    border-radius: var(--border-radius);
+}
+
+.container-images .container-img:hover .div-hover{
+    display: block;
+ }
+
+ .container-images  .image-title{
+    display: none;
+    position: absolute;
+    font-weight: var(--font-light);
+    font-size: 1rem;
+    color: var(--color-secondary);
+    color: var(--color-body);
+    top: 1.5rem;
+    left: 1rem;
+ }
+
+ .container-images .container-img:hover .image-title{
+    display: block;
+ }
+
+ .container-images .container-img .image-btnPerfil {
+    display: none;
+    position: absolute;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    background: var(--color-primary);
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 1rem;
+    font-weight: var(--font-semiBold);
+    right: 35%;
+    left: 35%;
+    top:50%;
+    margin: auto;
+    text-align: center;
+ }
+
+ .container-images .container-img .image-btnPerfil:hover{
+    background: var(--color-secondary);
+    color: var(--color-body);
+    border: 1px solid var(--color-body);
+ }
+ 
+ .container-images .container-img:hover .image-btnPerfil{
+    display: block;
+ }
+
+ /************************
+ * ESTILOS PÁGINA UPLOAD *
+ ************************/
+
+ .container-upload {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    margin: 1rem auto auto auto;
+ }
+
+ .container-upload form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+ }
+
+ .container-upload .drag-area{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border:  5px dashed #ddd;
+    border-radius: var(--border-radius);
+    width: 25rem;
+    height: 30rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: var(--font-light);
+    color: var(--color-secondary);
+    cursor: pointer;
+ }
+
+ .container-upload .drag-area.active{
+    background: #b8d4fe;
+    color: black;
+    border: 2px dashed #618ac9;
+ }
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px #ddd;
+}
+
+.drag-area .upload-img{
+    width: 60%;
+    columns: 1 ;
+    border-radius: var(--border-radius);
+ }
+
+ .container-upload .upload-text{
+    width: 25rem;
+    display: flex;
+    flex-direction:  column;
+ }
+
+ .container-upload .upload-text input{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: var(--font-semiBold);
+    color: var(--color-secondary);
+    border-radius: var(--border-radius);
+ }
+
+ .container-upload .upload-text input:nth-child(3){
+    background: var(--color-primary);
+    width: 100%;
+    height: 3rem;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border:none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: var(--font-bold);
+    color: var(--color-secondary);
+    cursor: pointer;
+ }
+
+ .container-upload .upload-text input:nth-child(3):hover{
+    background: var(--color-secondary);
+    color: var(--color-body);
+ }
+
+  /**************************
+ * ESTILOS PERFIL DE IMAGEN *
+ ****************************/
+
+ .container-profileImage{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 2rem 0;
+   gap: 1rem;
+ }
+
+ .container-profileImage .image-profileImage{
+   width: 400px;
+   border-radius: var(--border-radius);
+ }
+
+ .container-profileImage .image-profileImage img{
+   width: 100%;
+   border-radius: var(--border-radius);
+ }
+
+ .container-profileImage .image-contenido{
+   
+   width: 500px;
+   line-height: 1.5;
+ }
+
+ .container-profileImage .image-contenido span{
+   font-weight: bold;
+ }
+
+.image-opciones{
+   width: 100%;
+   display: flex;
+   flex: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+ .image-contenido .image-btnDelete{
+   width: 7rem;
+   background: var(--color-primary);
+   color: var(--color-secondary);
+   padding: 0.5rem;
+   border-radius: var(--border-radius);
+   text-decoration: none;
+   font-size: 1rem;
+   font-weight: var(--font-semiBold);
+   text-align: center;
+   margin-top: 1rem;
+   
+ }
+
+ .image-contenido .image-btnDelete:hover{
+   background: var(--color-secondary);
+   color: var(--color-body);
+ }
+
+ .container-profileImage .image-textDescripcion{
+   border-radius: var(--border-radius);
+   background: #d3d1d1;
+   padding: 1rem;
+   margin-top: 0.5rem;
+ }

@@ -1,0 +1,57 @@
+
+<div class="container-upload">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="drag-area">
+            <p id="image-text">Arrastrar o haz click <br> para cargar una imágen</p>
+            <input type="file" name="image" id="input-file" hidden required>
+            <img src="" alt="" class="" id="mostrar-img">
+        </div>
+        <div class="upload-text">
+            <input type="text" name="title" id="" placeholder="Titulo" required>
+            <input type="text" name="description" id="" placeholder="Descripción" required>
+            <input type="submit" value="Guardar">
+        </div>
+    </form>
+</div>
+
+
+<!--
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <title>Image Upload</title> --}}
+</head>
+<body>
+    {{!-- <%- include("partials/navigation.ejs") %> --}}
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/upload" method="POST" enctype="multipart/form-data">
+                            <div class="input-group mb-3">
+                                <input type="file" name ="image" class="form-control" id="inputGroupFile02">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="title" placeholder="title" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="description" class="form-control" placeholder="Description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block">
+                                    Upload
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+!-->
